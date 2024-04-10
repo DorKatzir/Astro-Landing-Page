@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:400,600");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+:root {
+  /* Colors */
+  --bkg: 222 47.4% 11.2%;
+  --bkg-alt: 226 58.3% 18.8%;
+  --text: 226 100% 93.9%;
+  --text-alt: 226 22.1% 73.3%;
+  --muted: 230 39% 67.8%;
+  --white: 255 100% 100%;
+  --accent1: 241 76.8% 62.7%;
+  --accent2: 330 85.2% 60.4%;
+  --accent3: 0 90.6% 70.8%;
+  --gradient: linear-gradient(
+    94.55deg,
+    hsl(var(--accent2)) -4.6%,
+    hsl(var(--accent3)) 99.9%
+  );
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 130%;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 1.55;
+  max-width: 2000px;
+  margin: auto;
+  background-color: hsl(var(--bkg));
+  color: hsl(var(--text));
+}
