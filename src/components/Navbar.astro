@@ -1,5 +1,6 @@
 ---
-import Icon from 'astro-icon'
+import { Icon } from 'astro-icon/components'
+
 const navLinks = [
     {
         name: 'Home',
@@ -23,3 +24,16 @@ const navLinks = [
     }
 ]
 ---
+
+<nav>
+    <div class="container nav-container">
+        <Icon name="logo" width={280} height={101} class='logo'/>
+        <div class="nav-wrapper">
+            <button class="btn btn--menu" id="menu-btn" aria-expanded="false" aria-label="Open mobile nav">
+                <Icon name="menu" width={25}/>
+            </button>
+            <ul></ul>
+
+        </div>
+    </div>
+</nav>
