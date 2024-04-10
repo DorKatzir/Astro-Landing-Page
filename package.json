@@ -13,10 +13,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.5.17",
+    "astro": "^4.5.18",
     "astro-icon": "^1.1.0"
   },
-  "devDependencies": {
+   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "open-props": "^1.7.2",
     "postcss": "^8.4.38",
