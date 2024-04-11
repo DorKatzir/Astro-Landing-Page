@@ -170,15 +170,39 @@ small {
 
 
 /* COMPONENTS */
+.btn{
+	color: hsl(var(--white));
+	text-decoration: none;
+	padding: var(--size-2) var(--size-fluid-4);
+	border-radius: var(--radius-1);
+	cursor: pointer;
+}
+.btn--primary {
+  background-color: hsl(var(--accent1));
+}
 
-/* BTN */ 
+.btn--secondary {
+  background: var(--gradient);
+}
+
+.btn--muted {
+  background-color: hsl(var(--muted));
+}
+
+.btn--menu {
+  background-color: transparent;
+  border: none;
+  display: grid;
+  place-items: center;
+  padding-inline: var(--size-2);
+}
+
 
 /* NAV */
 .nav-container{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #fff;
 	padding-inline: var(--size-fluid-2);
 }
 
