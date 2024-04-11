@@ -292,8 +292,13 @@ li[role="none"],
 		width: initial;
 		font-size: var(--font-size-0);
 	}
-
 }
+
+/* HERO */
+header{
+  text-align: center;
+}
+
 /* PROGRAMMER SECTION */
 .programmer::after,
 .programmer::before{
@@ -302,6 +307,19 @@ li[role="none"],
 .programmer-icon{
   width: var(--size-fluid-9);
   filter: drop-shadow(10px 10px 25px hsl(var(--accent2)/.2));
+}
+
+/* SERVICES */
+.services{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--size-fluid-3);
+}
+.service{
+  flex: 1 1 300px;
+  display: grid;
+  gap: var(--size-2);
 }
 
 /* FOOTER */
