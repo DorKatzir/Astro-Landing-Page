@@ -214,11 +214,11 @@ small {
 	border-radius: 50% 50% 50%;
 }
 .blur::after{
-	background-color: hsl(var(--accent1)/.3);
+	background-color: hsl(var(--accent1)/.2);
 	transform: rotate(-20deg);
 }
 .blur::before{
-	background-color: hsl(var(--accent2)/.3);
+	background-color: hsl(var(--accent2)/.2);
 	transform: rotate(20deg);
 	
 }
