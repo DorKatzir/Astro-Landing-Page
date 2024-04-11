@@ -32,7 +32,7 @@ const navLinks = [
             <button class="btn btn--menu" id="menu-btn" aria-expanded="false" aria-label="Open mobile nav">
                 <Icon name="menu" width={25} height={20}/>
             </button>
-            <ul class="nav-links" role="navigation"></ul>
+            <ul class="nav-links" role="navigation">
                 {
                     navLinks.map(link => (
                         <li role="none">
@@ -41,6 +41,7 @@ const navLinks = [
                     ))
 
                 }
+            </ul>    
         </div>
     </div>
 </nav>

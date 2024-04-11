@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Inter:400,600");
+/* @import url("https://fonts.googleapis.com/css?family=Inter:400,600"); */
 
 *,
 *::before,
@@ -171,3 +171,20 @@ small {
 
 
 /* COMPONENTS */
+
+/* BTN */ 
+
+/* NAV */
+.nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: var(--size-fluid-2);
+}
+
+.nav-links,
+.nav-wrapper{
+	display: flex;
+	align-items: center;
+	gap: var(--size-3);
+}
