@@ -294,9 +294,17 @@ li[role="none"],
 	}
 
 }
+/* PROGRAMMER SECTION */
+.programmer::after,
+.programmer::before{
+  opacity: .8;
+}
+.programmer-icon{
+  width: var(--size-fluid-9);
+  filter: drop-shadow(10px 10px 25px hsl(var(--accent2) / .2));
+}
 
 /* FOOTER */
-
 footer{
 	display: grid;
 	place-items: center;
