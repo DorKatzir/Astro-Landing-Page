@@ -80,3 +80,94 @@ main{
   max-width: 900px;
   margin: auto;
 }
+
+
+/* UTILS */
+.text-bkg {
+  color: hsl(var(--bkg));
+}
+.text-bkg-alt {
+  color: hsl(var(--bkg-alt));
+}
+.text-text {
+  color: hsl(var(--text));
+}
+.text-text-alt {
+  color: hsl(var(--text-alt));
+}
+.text-muted {
+  color: hsl(var(--muted));
+}
+.text-white {
+  color: hsl(var(--white));
+}
+.text-accent1 {
+  color: hsl(var(--accent1));
+}
+.text-accent2 {
+  color: hsl(var(--accent2));
+}
+.text-accent3 {
+  color: hsl(var(--accent3));
+}
+.text-gradient {
+  color: transparent;
+  background: var(--gradient);
+  background-clip: text;
+}
+
+.h1 {
+  font-size: var(--font-size-fluid-3);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.h2 {
+  font-size: var(--font-size-fluid-2);
+  font-weight: 600;
+  line-height: 1.1;
+}
+.h3 {
+  font-size: var(--font-size-fluid-1);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+small {
+  font-size: var(--font-size-00);
+}
+
+.grid-sm {
+  display: grid;
+  place-items: center;
+  gap: var(--size-fluid-1);
+}
+
+.grid-md {
+  display: grid;
+  place-items: center;
+  gap: var(--size-fluid-3);
+}
+
+.grid-lg {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: var(--size-fluid-3);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.narrow {
+  max-width: 80ch;
+}
+
+
+/* COMPONENTS */
