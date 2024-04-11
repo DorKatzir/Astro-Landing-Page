@@ -45,6 +45,38 @@ body {
   line-height: 1.55;
   max-width: 2000px;
   margin: auto;
-  background-color: hsl(var(--bkg));
+  background-color: hsl(var(--bkg) / 1);
   color: hsl(var(--text));
+}
+
+/* LAYOUT */
+.wrapper{
+	overflow: hidden;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100dvh;
+}
+
+main{
+	display: grid;
+	gap: var(--size-fluid-6);
+	padding: var(--size-fluid-5) var(--size-fluid-2);
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+.container-sm {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container-xs {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
 }
