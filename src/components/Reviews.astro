@@ -1,9 +1,23 @@
 ---
+import { Icon } from 'astro-icon/components'
 import data from '../data/reviews.json'
 ---
 
-<section class="reviews container-sm">
-    <h2 class="sr-only">Reviews</h2>
+<section class="review-wrapper blur">
+    <div class="review-containers container-xs">
+        <button class="review-btn grid-sm review-btn--prev" id="prev" aria-lable="Previous Review">
+            <Icon name="chevron-left" width={50} height={50} />
+        </button>
+        <button class="review-btn grid-sm review-btn--next" id="next" aria-lable="Next Review">
+            <Icon name="chevron-right" width={50} height={50} />
+        </button>
+
+    </div>
+      
+
+
+
+    <!-- <h2 class="sr-only">Reviews</h2>
     {
         data.map(review => (
             <div class="review">
@@ -13,7 +27,7 @@ import data from '../data/reviews.json'
                 <p class="text-muted">{review.content}</p>
             </div>
         ))
-    }
+    } -->
 </section>
 
 <script src="../js/reviews.js"></script>
