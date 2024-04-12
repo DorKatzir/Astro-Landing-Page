@@ -1,1 +1,22 @@
-rReviews
+---
+import data from '../data/reviews.json'
+---
+
+<section class="reviews container-sm">
+    <h2 class="sr-only">Reviews</h2>
+    {
+        data.map(review => (
+            <div class="review">
+                <img src={review.avatar} alt="">
+                <h3>{review.name}</h3>
+                
+                <p class="text-muted">{review.content}</p>
+            </div>
+        ))
+    }
+</section>
+
+<script src="../js/reviews.js">
+
+</script>
+
