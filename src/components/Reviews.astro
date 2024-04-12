@@ -4,30 +4,41 @@ import data from '../data/reviews.json'
 ---
 
 <section class="review-wrapper blur">
+    <h2 class="sr-only">Reviews</h2>
     <div class="review-containers container-xs">
         <button class="review-btn grid-sm review-btn--prev" id="prev" aria-lable="Previous Review">
             <Icon name="chevron-left" width={50} height={50} />
         </button>
+
+        <div class="reviews">
+            {
+                data.map(review => (
+                    <div class="review grid-sm">
+                        <img src={review.avatar} alt={review.name} class="review--avatar">
+                        <p class="review--content">{review.content}</p>
+                        <p class="review--name text-gradient">{review.name}</p>
+                    </div>
+                ))
+            }
+
+        </div>
+
+        <div class="indicator-container">
+            {
+                data.map(review => (
+                    <button class={`indicator ${review?.active && 'active'}`}></button>
+                ))
+            }
+
+        </div>
+
+
         <button class="review-btn grid-sm review-btn--next" id="next" aria-lable="Next Review">
             <Icon name="chevron-right" width={50} height={50} />
         </button>
 
     </div>
       
-
-
-
-    <!-- <h2 class="sr-only">Reviews</h2>
-    {
-        data.map(review => (
-            <div class="review">
-                <img src={review.avatar} alt="">
-                <h3>{review.name}</h3>
-                
-                <p class="text-muted">{review.content}</p>
-            </div>
-        ))
-    } -->
 </section>
 
 <script src="../js/reviews.js"></script>
