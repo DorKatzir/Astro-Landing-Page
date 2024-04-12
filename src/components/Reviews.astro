@@ -6,17 +6,38 @@ import data from '../data/reviews.json'
 <section class="review-wrapper blur">
     <h2 class="sr-only">Reviews</h2>
     <div class="review-containers container-xs">
+
         <button class="review-btn grid-sm review-btn--prev" id="prev" aria-lable="Previous Review">
             <Icon name="chevron-left" width={50} height={50} />
         </button>
 
         <div class="reviews">
             {
+                data.slice(data.length -1).map(review => (
+                    <div class="review grid-sm">
+                        <img src={review.avatar} alt={review.name} class="review--avatar">
+                        <p class="review--content">{review.content}</p>
+                        <p class="review--name text-gradient h3">{review.name}</p>
+                    </div>
+                ))
+            }
+
+            {
                 data.map(review => (
                     <div class="review grid-sm">
                         <img src={review.avatar} alt={review.name} class="review--avatar">
                         <p class="review--content">{review.content}</p>
-                        <p class="review--name text-gradient">{review.name}</p>
+                        <p class="review--name text-gradient h3">{review.name}</p>
+                    </div>
+                ))
+            }
+
+            {
+                data.slice(0, 1).map(review => (
+                    <div class="review grid-sm">
+                        <img src={review.avatar} alt={review.name} class="review--avatar">
+                        <p class="review--content">{review.content}</p>
+                        <p class="review--name text-gradient h3">{review.name}</p>
                     </div>
                 ))
             }
@@ -29,7 +50,6 @@ import data from '../data/reviews.json'
                     <button class={`indicator ${review?.active && 'active'}`}></button>
                 ))
             }
-
         </div>
 
 
