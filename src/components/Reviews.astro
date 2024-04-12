@@ -3,11 +3,11 @@ import { Icon } from 'astro-icon/components'
 import data from '../data/reviews.json'
 ---
 
-<section class="review-wrapper blur">
+<section class="reviews-wrapper blur">
     <h2 class="sr-only">Reviews</h2>
-    <div class="review-containers container-xs">
+    <div class="reviews-container container-xs">
 
-        <button class="review-btn grid-sm review-btn--prev" id="prev" aria-lable="Previous Review">
+        <button class="review--btn grid-sm review-btn--prev" id="prev" aria-lable="Previous Review">
             <Icon name="chevron-left" width={50} height={50} />
         </button>
 
@@ -53,7 +53,7 @@ import data from '../data/reviews.json'
         </div>
 
 
-        <button class="review-btn grid-sm review-btn--next" id="next" aria-lable="Next Review">
+        <button class="review--btn grid-sm review-btn--next" id="next" aria-lable="Next Review">
             <Icon name="chevron-right" width={50} height={50} />
         </button>
 
