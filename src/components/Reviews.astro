@@ -7,7 +7,7 @@ import data from '../data/reviews.json'
     <h2 class="sr-only">Reviews</h2>
     <div class="reviews-container container-xs">
 
-        <button class="review--btn grid-sm review-btn--prev" id="prev" aria-lable="Previous Review">
+        <button class="review-btn grid-sm review-btn--prev" id="prev" aria-lable="Previous Review">
             <Icon name="chevron-left" width={50} height={50} />
         </button>
 
@@ -15,9 +15,9 @@ import data from '../data/reviews.json'
             {
                 data.slice(data.length -1).map(review => (
                     <div class="review grid-sm">
-                        <img src={review.avatar} alt={review.name} class="review--avatar">
-                        <p class="review--content">{review.content}</p>
-                        <p class="review--name text-gradient h3">{review.name}</p>
+                        <img src={review.avatar} alt={review.name} class="review-avatar">
+                        <p class="review-content">{review.content}</p>
+                        <p class="review-name text-gradient h3">{review.name}</p>
                     </div>
                 ))
             }
@@ -25,9 +25,9 @@ import data from '../data/reviews.json'
             {
                 data.map(review => (
                     <div class="review grid-sm">
-                        <img src={review.avatar} alt={review.name} class="review--avatar">
-                        <p class="review--content">{review.content}</p>
-                        <p class="review--name text-gradient h3">{review.name}</p>
+                        <img src={review.avatar} alt={review.name} class="review-avatar">
+                        <p class="review-content">{review.content}</p>
+                        <p class="review-name text-gradient h3">{review.name}</p>
                     </div>
                 ))
             }
@@ -35,9 +35,9 @@ import data from '../data/reviews.json'
             {
                 data.slice(0, 1).map(review => (
                     <div class="review grid-sm">
-                        <img src={review.avatar} alt={review.name} class="review--avatar">
-                        <p class="review--content">{review.content}</p>
-                        <p class="review--name text-gradient h3">{review.name}</p>
+                        <img src={review.avatar} alt={review.name} class="review-avatar">
+                        <p class="review-content">{review.content}</p>
+                        <p class="review-name text-gradient h3">{review.name}</p>
                     </div>
                 ))
             }
@@ -53,7 +53,7 @@ import data from '../data/reviews.json'
         </div>
 
 
-        <button class="review--btn grid-sm review-btn--next" id="next" aria-lable="Next Review">
+        <button class="review-btn grid-sm review-btn--next" id="next" aria-lable="Next Review">
             <Icon name="chevron-right" width={50} height={50} />
         </button>
 
