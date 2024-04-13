@@ -1,6 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components'
 import data from '../data/pricing.js'
+import Button  from './Button.astro'
 ---
 
 <section class="pricing-wrapper">
@@ -23,14 +24,13 @@ import data from '../data/pricing.js'
                         {
                            card.details.map(feature => (
                                 <li class="pricing-card-feature">
-                                    { card?.featured 
-                                        ? <Icon name="check-circle" width={24} height={24} class="text-accent2" />
-                                        : <Icon name="check-circle" width={24} height={24} class="text-alt" />
-                                    }
+                                    <Icon name="check-circle" width={24} height={24} class={card?.featured ? 'text-accent2' : 'text-alt'} />
+                                    <span>{feature}</span>   
                                 </li>
                            ))
                         }
                     </ul>
+                    <Button text={card.button.text} link={card.button.url} style={card.button.style} />
                 </div>
             ))
         }
