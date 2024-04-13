@@ -31,6 +31,7 @@ import Button  from './Button.astro'
                         }
                     </ul>
                     <Button text={card.button.text} link={card.button.url} style={card.button.style} />
+                    <small class="text-muted">{card.subtext}</small>
                 </div>
             ))
         }
