@@ -1,4 +1,5 @@
 {
+  "homepage" : "https://dorkatzir.github.io/Astro-Landing-Page",
   "name": "landing-page",
   "type": "module",
   "version": "0.0.1",
@@ -10,7 +11,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "astro": "^4.5.18",
