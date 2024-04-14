@@ -478,6 +478,18 @@ header{
   font-size: var(--font-size-0);
 }
 
+.pricing-card-feature-container{
+  list-style: none;
+  font-size: var(--font-size-0);
+  display: grid;
+  gap: var(--size-2);
+  margin-bottom: var(--size-2);
+}
+.pricing-card-feature{
+  display: flex;
+  gap: var(--size-2);
+}
+
 /* FOOTER */
 footer{
 	display: grid;
