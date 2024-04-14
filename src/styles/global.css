@@ -458,6 +458,26 @@ header{
   padding: 0 var(--size-2);
 }
 
+/* MEDIA */
+
+.pricing-card-price{
+  font-size: var(--size-fluid-2);
+  font-weight: bold;
+  text-align: center;
+}
+.pricing-card-pill{
+  background-color: hsl(var(--text-alt));
+  color: hsl(var(--bkg));
+  text-transform: uppercase;
+  text-align: center;
+  font-size: var(--font-size-00);
+  border-radius: var(--size-2);
+  padding: 0 var(--size-2);
+}
+.pricing-card-description{
+  font-size: var(--font-size-0);
+}
+
 /* FOOTER */
 footer{
 	display: grid;
