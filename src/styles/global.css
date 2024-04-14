@@ -420,6 +420,43 @@ header{
   background-color: hsl(var(--text-alt));
 }
 
+/* PRICING */
+.pricing-wrapper{
+  display: grid;
+  gap: var(--size-fluid-5);
+}
+.pricing-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-3);
+  align-items: center;
+  justify-content: center;
+}
+.pricing-container::before,
+.pricing-container::after{
+  inset: 25%;
+}
+.pricing-card{
+  padding: var(--size-3) var(--size-5);
+  border: 1px solid hsl(var(--text-alt));
+  background-color: hsl(var(--bkg));
+}
+.pricing-card.featured{
+  border-color: hsl(var(--accent2));
+  position: relative;
+}
+.pricing-card.featured::before{
+  content: 'Most Popular';
+  position: absolute;
+  top: calc(var(--size-fluid-1) * -.15);
+  transform: translateY(-50%);
+  background: var(--gradient);
+  font-size: var(--font-size-00);
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: var(--size-2);
+  padding: 0 var(--size-2);
+}
 
 /* FOOTER */
 footer{
