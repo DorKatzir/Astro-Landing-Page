@@ -434,7 +434,7 @@ header{
 }
 .pricing-container::before,
 .pricing-container::after{
-  inset: 25%;
+  inset: 15%;
 }
 .pricing-card{
   padding: var(--size-3) var(--size-5);
@@ -483,6 +483,7 @@ header{
 }
 .pricing-card-description{
   font-size: var(--font-size-0);
+  text-align: center;
 }
 
 .pricing-card-feature-container{
