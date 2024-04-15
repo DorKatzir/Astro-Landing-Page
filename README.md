@@ -1,4 +1,4 @@
 # Astro Landing Page
 
-![](screenshot.png)
+![https://dorkatzir.github.io/Astro-Landing-Page/](screenshot.png)
 
