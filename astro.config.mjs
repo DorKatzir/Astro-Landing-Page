@@ -8,4 +8,7 @@ export default defineConfig({
     integrations: [icon(), relativeLinks()],
     outDir: './docs',
     compressHTML: false,
+    build: {
+        assets: 'css'
+    }
 });
