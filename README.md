@@ -1,4 +1,4 @@
 # Astro Landing Page
 
-![](screenshot.png)
+[![An old rock in the desert](screenshot.png "Astro Landing page")](https://dorkatzir.github.io/Astro-Landing-Page/)
 
